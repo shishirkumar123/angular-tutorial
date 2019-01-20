@@ -6,6 +6,7 @@ import { ProperyBindingComponent } from './propery-binding/propery-binding.compo
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TemplateRefVariableComponent } from './template-ref-variable/template-ref-variable.component';
 
 const routes: Routes = [
 
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'propery-binding', component: ProperyBindingComponent},
   { path: 'class-binding', component: ClassBindingComponent},
   { path: 'style-binding', component: StyleBindingComponent},
-  { path: 'event-binding', component: EventBindingComponent}
+  { path: 'event-binding', component: EventBindingComponent},
+  { path: 'template-ref-variable', component: TemplateRefVariableComponent}
 ];
 
 @NgModule({
