@@ -1,0 +1,16 @@
+
+  <h2 class="myclass">This text should be red</h2>
+<!-- h2 tag doesnt work inside p tag-->
+Hardcoded class-<br>
+<h2 class="text-green">status</h2>
+<h2 class="text-yellowgreen">status</h2>
+<h2 class="text-yellow">status</h2>
+<h2 class="text-orange">status</h2>
+<h2 class="text-orangered">status</h2>
+<h2 class="text-red">status</h2>
+
+class binding - <br>
+
+<h2 [class]="status">status using binding</h2>
+
+<h2 [class.text-red] = "hasError">status using variable</h2>

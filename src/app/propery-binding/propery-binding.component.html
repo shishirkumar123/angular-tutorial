@@ -1,0 +1,32 @@
+<p>
+  There is a difference between an HTML attribute and a DOM property.
+  Attribute initialize DOM and they are done. Attribute value cant change once they are initialized. DOM properties can.
+</p>
+
+<input type = "text" value ="Spiderman">
+In the chrome do inspect element on spiderman and then in console(crl+shft+I), try this - 
+$0.getAttribute('value')
+$0.value
+
+<br>
+Property binding - <br>
+<input [id] = "addressId" type = "text" value ="address goes here"> 
+<input id = "{{addressId}}" type = "text" value ="address goes here"> 
+Inspect element and see the id 'addressId'. There is an element 'addressId' defined in the class as well
+
+<br>
+Difference between interpolation and propery binding - interpolation works only with string value.
+See below example of interpolation - <br>
+
+<input disabled id = "{{addressId}}" type = "text" value ="address goes here"> - This is fine <br>
+<input disabled = "{{false}}" id = "{{addressId}}" type = "text" value ="address goes here"> - This should have been enabled <br>
+
+Now it is done through property binding - <br>
+
+<input [disabled] = "false" id = "{{addressId}}" type = "text" value ="address goes here"> - Works fine <br>
+
+Below element is disabled through variable -<br>
+<input [disabled] = "isDisabled" type = "text" value="20"> <br>
+
+Below element is disabled through bind-disabled -<br>
+<input bind-disabled = "isDisabled" type = "text" value="20">
