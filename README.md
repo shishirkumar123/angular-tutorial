@@ -34,7 +34,7 @@ it is better ti use ng new user-auth-web --skip-git to avoid git conflicts later
 =====================================================================================================================
 
 
-Overview
+Project Overview
 ---------------
 main.ts bootstraps AppModule
 AppModule bootstraps AppComponent
