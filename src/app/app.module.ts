@@ -10,9 +10,9 @@ import { ProperyBindingComponent } from './propery-binding/propery-binding.compo
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
-import { AComponent } from './a/a.component';
 import { TemplateRefVariableComponent } from './template-ref-variable/template-ref-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +23,9 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
     ClassBindingComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    AComponent,
     TemplateRefVariableComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

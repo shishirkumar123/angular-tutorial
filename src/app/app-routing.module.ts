@@ -8,6 +8,7 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TemplateRefVariableComponent } from './template-ref-variable/template-ref-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'style-binding', component: StyleBindingComponent},
   { path: 'event-binding', component: EventBindingComponent},
   { path: 'template-ref-variable', component: TemplateRefVariableComponent},
-  { path: 'two-way-binding', component: TwoWayBindingComponent}
+  { path: 'two-way-binding', component: TwoWayBindingComponent},
+  { path: 'directives', component: DirectivesComponent}
 ];
 
 @NgModule({

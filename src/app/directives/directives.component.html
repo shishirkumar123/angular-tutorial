@@ -1,0 +1,38 @@
+<h2 *ngIf="true">this will appear</h2>
+Wont appear - <h2 *ngIf="false">this wont</h2><br>
+This is different from display:none. Because for display:none element stays in DOM, but in case of *ngIf=false, the element is not present in the DOM itself. Varify using inspect
+<br>
+
+
+<h2 *ngIf="appear; else something">how about this</h2>
+<p *ngIf=appear>and this</p>
+
+<ng-template #something>
+  Some content in ng-template
+</ng-template>
+<br>----------Condition-----------<br>
+<div *ngIf="appear; then A; else B"></div>
+
+<ng-template #A>
+  Content from A
+</ng-template>
+
+<ng-template #B>
+  Content from B
+</ng-template>
+
+<br>--------Switch Case-------------<br>
+
+<div [ngSwitch] = "content">
+  <div *ngSwitchCase = "'amar'">Amar</div>
+  <div *ngSwitchCase = "'akbar'">Akbar</div>
+  <div *ngSwitchCase = "'anthony'">Antony</div>
+  <div *ngSwitchDefault>No Name</div>
+</div>
+
+<br>-----------For Loop----------<br>
+
+<div *ngFor = "let n of names; index as i; first as f; last as l; odd as o; even as e">
+  <div>{{i}}. {{n}} -- Is first Element -> {{f}}. Is last Element -> {{l}}. Is Odd ->{{o}}. Is even -> {{e}}</div>
+  <div>{{n.length}}</div>
+</div>
