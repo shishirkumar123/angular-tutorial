@@ -1,9 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
+  Message received in app component from nav component ->( {{message1}}  ) - On refresh goes away
+  <!-- Change it from message1 to message and see the effect-->
 
 </div>
-<app-nav></app-nav>
+<app-nav (navEvent) = "message1=$event" [appData] = "message"></app-nav>
+<!--appData variable needs to be declared in app-nav component(ts file) else above line wont compile. e.g-
+@Input() appData; -->
+
 <router-outlet></router-outlet>

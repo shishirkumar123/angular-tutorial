@@ -1,0 +1,26 @@
+<h2>Pipe affects only the view, not the actual value</h2>
+
+{{pledge}}<br>
+{{pledge | uppercase}}<br>
+{{pledge | lowercase}}<br>
+{{pledge | titlecase}}<br>
+{{pledge | slice:3}}<br>
+{{pledge | slice:3:7}}<br>
+{{person}}<br>
+{{person | json}}
+
+<br>-------------------------<br>
+
+{{1.234 | number:'1.2-3'}}<br>
+{{1.234 | number:'3.4-5'}}<br>
+{{1.234 | number:'3.1-2'}}<br>
+{{0.25 | percent}}<br>
+{{0.25 | currency}}<br>
+{{0.25 | currency : "GBP"}}<br>
+{{0.25 | currency : "GBP" : "code"}}<br>
+
+<br>-------------------------<br>
+{{date}}<br>
+{{date | date:"short"}}<br>
+{{date | date:"shortDate"}}<br>
+{{date | date:"shortTime"}}
