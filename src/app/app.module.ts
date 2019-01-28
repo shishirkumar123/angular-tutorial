@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { TemplateRefVariableComponent } from './template-ref-variable/template-r
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeService } from './employee.service';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +31,16 @@ import { PipesComponent } from './pipes/pipes.component';
     TemplateRefVariableComponent,
     TwoWayBindingComponent,
     DirectivesComponent,
-    PipesComponent
+    PipesComponent,
+    EmployeeListComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeService], //without declaring EmployeeService here also code works fine. Verify.
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,9 +10,10 @@ import { TemplateRefVariableComponent } from './template-ref-variable/template-r
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 
 const routes: Routes = [
-
   { path: 'interpolation', component: InterpolationComponent},
   { path: 'propery-binding', component: ProperyBindingComponent},
   { path: 'class-binding', component: ClassBindingComponent},
@@ -21,7 +22,9 @@ const routes: Routes = [
   { path: 'template-ref-variable', component: TemplateRefVariableComponent},
   { path: 'two-way-binding', component: TwoWayBindingComponent},
   { path: 'directives', component: DirectivesComponent},
-  { path: 'pipes', component: PipesComponent}
+  { path: 'pipes', component: PipesComponent},
+  { path: 'employee-list', component: EmployeeListComponent},
+  { path: 'employee-detail', component: EmployeeDetailComponent}
 ];
 
 @NgModule({
