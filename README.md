@@ -16,6 +16,7 @@ install code editor from microsoft
 
 ----------------
 C:\Dev\Installation\Angular>npm install -g @angular/cli
+shows below message:
 C:\Users\shish\AppData\Roaming\npm\ng -> C:\Users\shish\AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\@angular\cli\node_modules\fsevents):
 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
