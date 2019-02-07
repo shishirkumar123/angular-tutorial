@@ -38,7 +38,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [EmployeeService], //without declaring EmployeeService here also code works fine. Verify.
   bootstrap: [AppComponent]

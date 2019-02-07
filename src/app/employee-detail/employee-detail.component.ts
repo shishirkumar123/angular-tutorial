@@ -12,6 +12,10 @@ export class EmployeeDetailComponent implements OnInit {
   constructor(private _employeeService:EmployeeService) { }
 
   ngOnInit() {
-    this.employees = this._employeeService.getEmployees();
+    //this.employees = this._employeeService.getEmployees();
+    this._employeeService.getEmployees()
+        .subscribe(data => this.employees = data); //Left hand side is argument of the function
+                                                   //Right hand side is body of the function
+        //Note: Using subscribe, data arrives asynchronously. What does this mean?
   }
 }
